@@ -55,20 +55,20 @@ export function Adwuu() {
   const [selectedGenre, setSelectedGenre] = useState<Genre>("pop");
 
   return (
-    <section id="adwuu" className="min-h-screen flex flex-col items-start pt-6 px-6 text-white border-[48px] border-purple relative overflow-hidden animated-gradient">
+    <section id="adwuu" className="min-h-screen flex flex-col items-start pt-6 pb-8 md:pb-6 px-6 text-white border-y-[96px] md:border-[48px] border-purple relative overflow-hidden animated-gradient">
       <div className="w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="w-full flex justify-between items-start gap-8"
+          className="w-full flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:gap-8"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold shrink-0">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             adwuu
           </h2>
 
-          <p className="font-bold text-white text-right max-w-md">
+          <p className="font-bold text-white text-left md:text-right max-w-md">
             Songwriter and producer specializing in pop, hip-hop, and EDM. 100k+ streams to date.
           </p>
         </motion.div>
@@ -79,14 +79,14 @@ export function Adwuu() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-12 flex justify-between items-center"
+          className="mt-8 md:mt-12 flex flex-col md:flex-row md:justify-between md:items-center gap-4"
         >
-          <div className="flex gap-4">
+          <div className="flex gap-3 md:gap-4 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0 md:overflow-visible">
             {(Object.keys(genres) as Genre[]).map((genre) => (
               <button
                 key={genre}
                 onClick={() => setSelectedGenre(genre)}
-                className={`px-6 py-3 rounded-full font-semibold transition-all ${
+                className={`px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold transition-all whitespace-nowrap ${
                   selectedGenre === genre
                     ? "bg-white text-background"
                     : "bg-transparent border border-white text-white hover:bg-white/20"

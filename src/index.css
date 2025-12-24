@@ -9,9 +9,9 @@
   --color-accent: #C1C1C1;
   --color-accent-light: #d4d4d4;
 
-  --color-purple: #884CC1;
-  --color-blue: #40788A;
-  --color-yellow: #908354;
+  --color-purple: #E600FF;
+  --color-blue: #0015FF;
+  --color-yellow: #D1A400;
 
   --font-sans: "Syne", system-ui, -apple-system, sans-serif;
 }
@@ -45,13 +45,45 @@ body {
   background: linear-gradient(
     -45deg,
     #0a0a0a,
-    #1a0a2e,
-    #2d1b4e,
-    #1a0a2e,
+    #0f0a15,
+    #140d1f,
+    #0f0a15,
     #0a0a0a,
-    #0a1a2e,
-    #1b2d4e,
-    #0a1a2e
+    #0a0d14,
+    #0d1219,
+    #0a0d14
+  );
+  background-size: 400% 400%;
+  animation: gradient-move 15s ease infinite;
+}
+
+.animated-gradient-blue {
+  background: linear-gradient(
+    -45deg,
+    #0a0a0a,
+    #0a0d10,
+    #0d1418,
+    #0a1014,
+    #0a0a0a,
+    #0a0e12,
+    #0d1216,
+    #0a0d10
+  );
+  background-size: 400% 400%;
+  animation: gradient-move 15s ease infinite;
+}
+
+.animated-gradient-yellow {
+  background: linear-gradient(
+    -45deg,
+    #0a0a0a,
+    #0f0e0a,
+    #14120d,
+    #100f0a,
+    #0a0a0a,
+    #0e0d0a,
+    #12110d,
+    #0f0e0a
   );
   background-size: 400% 400%;
   animation: gradient-move 15s ease infinite;

@@ -1,30 +1,23 @@
 import { motion } from "framer-motion";
 import aminoVideo from "/videos/aminoanalytica.mp4";
+import aminoThumb from "/videos/aminoanalytica-thumb.jpg";
 
 export function AminoAnalytica() {
   return (
-    <section id="aminoanalytica" className="min-h-screen flex flex-col justify-between pt-6 pb-6 px-6 border-[48px] border-blue text-white relative overflow-hidden">
-      <video
-        src={aminoVideo}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="w-full relative z-10">
+    <section id="aminoanalytica" className="min-h-screen flex flex-col pt-6 pb-6 px-6 border-y-[96px] md:border-[48px] border-blue text-white overflow-hidden animated-gradient-blue">
+      <div className="w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="w-full flex justify-between items-start gap-8"
+          className="w-full flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:gap-8"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold shrink-0">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             AminoAnalytica
           </h2>
 
-          <p className="font-bold text-white text-right max-w-md">
+          <p className="font-bold text-white text-left md:text-right max-w-md">
             Co-founder and CTO. Building AI scientists to design life-saving drugs autonomously.
           </p>
         </motion.div>
@@ -33,9 +26,30 @@ export function AminoAnalytica() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="flex-1 flex items-center justify-center py-8"
+      >
+        <div className="w-full max-w-4xl aspect-[4/3] md:aspect-video overflow-hidden">
+          <video
+            src={aminoVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster={aminoThumb}
+            onCanPlay={(e) => (e.target as HTMLVideoElement).play()}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
-        className="relative z-10"
       >
         <a
           href="https://www.aminoanalytica.com"

@@ -140,14 +140,14 @@ export function Hero() {
         </AnimatePresence>
       </section>
 
-      <section className="px-[72px] py-12 text-right">
+      <section className="px-6 md:px-[72px] pt-12 pb-24 md:pb-32 text-center md:text-right">
         <p className="font-bold text-white mb-4">
           Interdisciplinary creative/scientist based in London, UK.
         </p>
         <p className="font-bold text-white mb-4">
           MEng @ Imperial College.
         </p>
-        <div className="flex flex-col gap-1 items-end font-bold text-muted">
+        <div className="flex flex-col gap-1 items-center md:items-end font-bold text-muted">
           <a href="mailto:adamwu838@gmail.com" className="hover:text-text transition-colors">adamwu838@gmail.com [E]</a>
           <a href="https://linkedin.com/in/akhwu" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors">linkedin/akhwu [LI]</a>
           <a href="https://x.com/adaminoacid" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors">@adaminoacid [X]</a>

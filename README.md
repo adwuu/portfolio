@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my work in biology, music, and film.
 
-**Live site:** [adamwu.github.io/portfolio](https://adamwu.github.io/portfolio/)
+**Live site:** [adamwu.github.io/portfolio](https://adwuu.github.io/portfolio/)
 
 ## Tech Stack
 
