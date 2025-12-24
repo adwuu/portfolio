@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-surface: #141414;
+  --color-border: #262626;
+  --color-muted: #737373;
+  --color-text: #fafafa;
+  --color-accent: #C1C1C1;
+  --color-accent-light: #d4d4d4;
+
+  --color-purple: #884CC1;
+  --color-blue: #40788A;
+  --color-yellow: #908354;
+
+  --font-sans: "Syne", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-text antialiased;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  @apply bg-accent/30 text-text;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    #0a0a0a,
+    #1a0a2e,
+    #2d1b4e,
+    #1a0a2e,
+    #0a0a0a,
+    #0a1a2e,
+    #1b2d4e,
+    #0a1a2e
+  );
+  background-size: 400% 400%;
+  animation: gradient-move 15s ease infinite;
+}
+
