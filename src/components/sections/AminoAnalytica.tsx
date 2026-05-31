@@ -18,7 +18,7 @@ export function AminoAnalytica() {
           </h2>
 
           <p className="font-bold text-white text-left md:text-right max-w-md">
-            Co-founder and CTO. Building AI scientists to design life-saving drugs autonomously.
+            Co-founder and CTO. Building AI scientists to prevent the next pandemic.
           </p>
         </motion.div>
       </div>

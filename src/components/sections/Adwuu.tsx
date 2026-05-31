@@ -12,19 +12,20 @@ const genres = {
       "5tVVo6rLpnepq9Unx6nDC9",
       "1tAzDXHW0lnsgaFupkx3IB",
       "7q4bhtRKWiT4vldV12zT3s",
-      "1Pbsir2CNnzpBea6DFZdej",
       "2ezSn4nSbKkw6eMggtjlOg",
     ],
   },
   hiphop: {
     label: "Rap",
     tracks: [
+      "7btlRPzvY3ITCArgCsmFAE",
       "4vXzvMp9NVZT3Dbip6I4Ar",
       "1XAoRhgUbL8EvcaRHYhZbV",
       "3vYVMujnwZLuCOgw5144wh",
       "4EB0cTqaqMTRTYAaJInxmy",
       "1UXWswhznP0PTi9MeTWqDw",
       "5W0HiRGjAjJRhlMhky99ww",
+      "4OwL5UdyJmpI4ws9Pg1IKQ",
     ],
   },
   edm: {
@@ -45,6 +46,7 @@ const genres = {
     tracks: [
       "1T6OPHTfkzccl6kfjf5SvP",
       "4Qz3OFaE4EV1jiLoEJcTzp",
+      "1Pbsir2CNnzpBea6DFZdej",
     ],
   },
 };

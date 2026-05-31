@@ -12,6 +12,7 @@
   --color-purple: #E600FF;
   --color-blue: #0015FF;
   --color-yellow: #D1A400;
+  --color-teal: #00C2CB;
 
   --font-sans: "Syne", system-ui, -apple-system, sans-serif;
 }
@@ -84,6 +85,22 @@ body {
     #0e0d0a,
     #12110d,
     #0f0e0a
+  );
+  background-size: 400% 400%;
+  animation: gradient-move 15s ease infinite;
+}
+
+.animated-gradient-teal {
+  background: linear-gradient(
+    -45deg,
+    #0a0a0a,
+    #0a0f10,
+    #0d1718,
+    #0a1416,
+    #0a0a0a,
+    #0a1213,
+    #0d1718,
+    #0a0f10
   );
   background-size: 400% 400%;
   animation: gradient-move 15s ease infinite;
