@@ -1,4 +1,4 @@
-import { Hero, AminoAnalytica, Adwuu, Film } from "../components/sections";
+import { Hero, AminoAnalytica, Adwuu, SingForGreece, Film } from "../components/sections";
 
 export function Home() {
   return (
@@ -6,6 +6,7 @@ export function Home() {
       <Hero />
       <AminoAnalytica />
       <Adwuu />
+      <SingForGreece />
       <Film />
     </>
   );
