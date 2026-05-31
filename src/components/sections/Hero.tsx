@@ -148,7 +148,6 @@ export function Hero() {
           MEng @ Imperial College.
         </p>
         <div className="flex flex-col gap-1 items-center md:items-end font-bold text-muted">
-          <a href="mailto:adamwu838@gmail.com" className="hover:text-text transition-colors">adamwu838@gmail.com [E]</a>
           <a href="https://linkedin.com/in/akhwu" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors">linkedin/akhwu [LI]</a>
           <a href="https://x.com/adaminoacid" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors">@adaminoacid [X]</a>
           <a href="https://instagram.com/adwuu" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors">@adwuu [IG]</a>
